@@ -33,20 +33,18 @@ class SCFlipCard extends HTMLElement {
 
     this._locked = true;
 
-    const scale = (500 + 200) / 500;
-
     const sideOne = [
-      {transform: `translateZ(-200px) rotate${this._axis}(0deg) scale(${scale})`},
-      {transform: `translateZ(-100px) rotate${this._axis}(0deg) scale(${scale})`, offset: 0.15},
-      {transform: `translateZ(-100px) rotate${this._axis}(180deg) scale(${scale})`, offset: 0.65},
-      {transform: `translateZ(-200px) rotate${this._axis}(180deg) scale(${scale})`}
+      {transform: `translateZ(0px) rotate${this._axis}(0deg)`},
+      {transform: `translateZ(100px) rotate${this._axis}(0deg)`, offset: 0.15},
+      {transform: `translateZ(100px) rotate${this._axis}(180deg)`, offset: 0.65},
+      {transform: `translateZ(0px) rotate${this._axis}(180deg)`}
     ];
 
     const sideTwo = [
-      {transform: `translateZ(-200px) rotate${this._axis}(180deg) scale(${scale})`},
-      {transform: `translateZ(-100px) rotate${this._axis}(180deg) scale(${scale})`, offset: 0.15},
-      {transform: `translateZ(-100px) rotate${this._axis}(360deg) scale(${scale})`, offset: 0.65},
-      {transform: `translateZ(-200px) rotate${this._axis}(360deg) scale(${scale})`}
+      {transform: `translateZ(0px) rotate${this._axis}(180deg)`},
+      {transform: `translateZ(100px) rotate${this._axis}(180deg)`, offset: 0.15},
+      {transform: `translateZ(100px) rotate${this._axis}(360deg)`, offset: 0.65},
+      {transform: `translateZ(0px) rotate${this._axis}(360deg)`}
     ];
 
     const umbra = [
